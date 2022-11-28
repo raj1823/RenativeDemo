@@ -1,0 +1,55 @@
+{
+    "platforms": {
+        "android":{
+            "versionCode": 4,
+            "versionName": "0.0.3",
+            "targetSdkVersion": 29,
+            "compileSdkVersion": 31,
+            "missingDimensionStrategy": "",
+            "gradle.properties": {
+              "android.useDeprecatedNdk": true,
+              "org.gradle.jvmargs": "-Xmx2048m",
+              "-XX:MaxPermSize": "512m",
+              "-XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding": "UTF-8"
+            },
+            "app/build.gradle": {
+              "compileSdkVersion": "20"
+            }
+        }
+    },
+    "plugins": {
+        "react": "source:rnv",
+        "react-art": "source:rnv",
+        "react-dom": "source:rnv",
+        "react-native": "source:rnv",
+        "@react-native-community/cli-platform-ios": "source:rnv",
+        "@react-native-community/cli": "source:rnv",
+        "react-native-tvos": "source:rnv",
+        "react-native-web": "source:rnv",
+        "next": "source:rnv"
+    },
+    "extendsTemplate": "@rnv/template-starter/renative.json",
+    "projectName": "demo",
+    "workspaceID": "rnv",
+    "defaults": {
+        "title": "Demo",
+        "id": "com.ttn.demo",
+        "supportedPlatforms": [
+            "ios",
+            "android",
+            "androidtv",
+            "web",
+            "tizen",
+            "tvos",
+            "webos"
+        ]
+    },
+    "engines": {},
+    "templates": {
+        "@rnv/template-starter": {
+            "version": "0.36.1"
+        }
+    },
+    "currentTemplate": "@rnv/template-starter",
+    "isMonorepo": false
+}
